@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet/less" type="text/css" href="../../src/rf-components.less" />
+    <script src="../../lib/less/less.min.js" type="text/javascript"></script>
+</head>
+<body ng-app="app">
+
+<div ng-controller="MasterController">
+
+</div>
+
+<script src="/lib/angular/angular.js"></script>
+<script src="/src/rf-components.js"></script>
+<script src="/src/rf-components-constants.js"></script>
+
+<script>
+
+    (function () {
+        'use strict';
+
+        angular.module('app', ['rfComponents'])
+
+                .controller('MasterController', ['$scope','rfComponentsConstants', function ($scope,rfComponentsConstants) {
+
+                    console.log('MasterController',rfComponentsConstants);
+
+                }])
+
+    })();
+
+</script>
+
+</body>
+</html>
